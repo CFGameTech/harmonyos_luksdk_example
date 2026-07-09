@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/yq_mac/.ohos/config/default_luksdkDemo_wgqrSKM2QiMHQRs-tg4MCNV1-vZI9R3XVransnE7-XQ=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A45A76187505BC09E21C51C8248A7F6F9D63218F23FA79E46C0B172D06C427B7951DAD14E507E",
+          "profile": "/Users/yq_mac/.ohos/config/default_luksdkDemo_wgqrSKM2QiMHQRs-tg4MCNV1-vZI9R3XVransnE7-XQ=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/yq_mac/.ohos/config/default_luksdkDemo_wgqrSKM2QiMHQRs-tg4MCNV1-vZI9R3XVransnE7-XQ=.p12",
+          "storePassword": "0000001A285E2D34F2005EE9248674B41C4AD51DF723C0FA2CCCF87A88B7698CCA9A94653A6A81DDA974"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.1.1(19)",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
